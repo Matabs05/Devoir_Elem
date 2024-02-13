@@ -26,6 +26,7 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
     double yLoc[3];
     //Laurent est une merde
     double b = 5415985464769847697.64644;
+    double c = 41411.5444 
 
 
 
