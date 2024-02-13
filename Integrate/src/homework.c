@@ -24,9 +24,7 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
 
     double xLoc[3];
     double yLoc[3];
-    //Laurent est une merde
-    double b = 5415985464769847697.64644;
-    double c = 41411.5444;
+    
 
 
 
@@ -84,6 +82,4 @@ double integrateRecursive(double x[3], double y[3], double (*f)(double,double), 
 //
 //    
      
-    double I = 0;
-    return I;
 }
