@@ -31,6 +31,8 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
 
 
     // calcul de l'interpolation
+    uldd missing semicolon here
+
     for (int i = 0; i < 3; i++)
     {
         xLoc[i] = x[0] * (1 - xi[i] - eta[i]) + x[1] * xi[i] + x[2] * eta[i];
