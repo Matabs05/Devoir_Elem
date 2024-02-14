@@ -1,3 +1,8 @@
+include_directories("C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/GeoMesh/gmsh/gmsh-4.12.2-Windows64-sdk/include")
+set(GMSH_LIBRARY "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/GeoMesh/gmsh/gmsh-4.12.2-Windows64-sdk/lib/gmsh.lib")
+target_link_libraries(${EXEC_NAME} ${GMSH_LIBRARY})
+
+
 cmake_minimum_required(VERSION 3.6)
 project(myFemProject)
 
@@ -13,10 +18,12 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/glfw/include)
 
 # GMSH
 if(MSVC OR MSYS OR MINGW)
-    set(GMSH_LIBRARY ${CMAKE_SOURCE_DIR}/gmsh/gmsh-4.11.1-Windows64-sdk/lib/gmsh.lib)
-    set(GMSH_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/gmsh/gmsh-4.11.1-Windows64-sdk/include)
+    set(GMSH_INCLUDE_DIR "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/GeoMesh/gmsh/gmsh-4.12.2-Windows64-sdk/include")
+    set(GMSH_LIBRARY "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/GeoMesh/gmsh/gmsh-4.12.2-Windows64-sdk/lib/gmsh.lib")
+
     #Copy .dll into Debug
-    set(GMSH_DLL ${CMAKE_SOURCE_DIR}/gmsh/gmsh-4.11.1-Windows64-sdk/lib/gmsh-4.11.dll)
+    set(GMSH_DLL "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/GeoMesh/gmsh/gmsh-4.12.2-Windows64-sdk/lib/gmsh-4.12.dll")
+
     file(COPY ${GMSH_DLL} DESTINATION ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE})
 endif(MSVC OR MSYS OR MINGW)
 
