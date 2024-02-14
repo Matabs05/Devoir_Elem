@@ -57,6 +57,7 @@ double integrateRecursive(double x[3], double y[3], double (*f)(double,double), 
 // ... A modifier :-)
 // y-compris la ligne juste en dessous :-)
 //
+// Bonne modif
     if(n == 0){
         double I = integrate(x,y,f);
         return I;
