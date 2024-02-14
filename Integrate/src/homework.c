@@ -24,6 +24,7 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
 
     double xLoc[3];
     double yLoc[3];
+
     
 
 
@@ -31,6 +32,7 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
     // calcul de l'interpolation
     // approx 
     //lkhsiejbrig
+    // penis
     double a = 0.0;
     
 
