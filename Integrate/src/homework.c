@@ -30,6 +30,7 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
 
     // calcul de l'interpolation
     // approx 
+    //lkhsiejbrig
     double a = 0.0;
     
 
