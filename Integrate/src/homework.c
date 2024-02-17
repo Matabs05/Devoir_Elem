@@ -25,6 +25,7 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
     double xLoc[3];
     double yLoc[3];
     printf("My double is: %lf\n", x[2]);
+    //Matthieu
 
     
 
