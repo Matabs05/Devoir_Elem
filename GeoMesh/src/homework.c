@@ -57,18 +57,18 @@ void geoMeshGenerate() {
     double r1 = theGeometry->rHole;
  
 //
-//  -1- Construction de la géométrie avec OpenCascade
-//      On crée le rectangle
-//      On crée les deux cercles
+//  -1- Construction de la gï¿½omï¿½trie avec OpenCascade
+//      On crï¿½e le rectangle
+//      On crï¿½e les deux cercles
 //      On soustrait les cercles du rectangle :-)
 //
  
     int ierr;
-    int idPlate = gmshModelOccAddRectangle(___, ___, ___, ___, ___, ___, ___,&ierr);   
+    int idPlate = gmshModelOccAddRectangle(-0.5*w, -0.5*h, 0, w, h, 0, 0,&ierr);   
     ErrorGmsh(ierr);
-    int idNotch = gmshModelOccAddDisk(___, ___, ___, ___, ___, ___,NULL,0,NULL,0,&ierr); 
+    int idNotch = gmshModelOccAddDisk(x0, y0, 0, r0, r0, -1,NULL,0,NULL,0,&ierr); 
     ErrorGmsh(ierr);
-    int idHole  = gmshModelOccAddDisk(___, ___, ___, ___, ___, ___,NULL,0,NULL,0,&ierr);    
+    int idHole  = gmshModelOccAddDisk(x1, y1, 0, r1, r1, -1,NULL,0,NULL,0,&ierr);    
     ErrorGmsh(ierr);
     
     int plate[] = {___,___};
@@ -80,9 +80,9 @@ void geoMeshGenerate() {
     ErrorGmsh(ierr);
  
 //
-//  -2- Définition de la fonction callback pour la taille de référence
+//  -2- Dï¿½finition de la fonction callback pour la taille de rï¿½fï¿½rence
 //      Synchronisation de OpenCascade avec gmsh
-//      Génération du maillage (avec l'option Mesh.SaveAll :-)
+//      Gï¿½nï¿½ration du maillage (avec l'option Mesh.SaveAll :-)
                   
    
     geoSetSizeCallback(geoSize);
