@@ -24,15 +24,15 @@ double integrate(double x[3], double y[3], double (*f) (double, double))
 
     double xLoc[3];
     double yLoc[3];
+    printf("My double is: %lf\n", x[2]);
+    //Matthieu
 
     
 
 
 
-    // calcul de l'interpolation
-    // approx 
-    //lkhsiejbrig
-    // penis
+    
+    
     double a = 0.0;
     
 
@@ -65,6 +65,7 @@ double integrateRecursive(double x[3], double y[3], double (*f)(double,double), 
 // y-compris la ligne juste en dessous :-)
 //
 // Bonne modif
+    n = 0;
     if(n == 0){
         double I = integrate(x,y,f);
         return I;
