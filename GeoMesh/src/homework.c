@@ -64,22 +64,21 @@ void geoMeshGenerate() {
 //
  
     int ierr;
-    int idPlate = gmshModelOccAddRectangle(-0.5*w, -0.5*h, 0, w, h, 0, 0,&ierr);   
+    int idPlate = gmshModelOccAddRectangle(-0.5*w, -0.5*h, 0, w, h, -1, 0,&ierr);   
     ErrorGmsh(ierr);
     int idNotch = gmshModelOccAddDisk(x0, y0, 0, r0, r0, -1,NULL,0,NULL,0,&ierr); 
     ErrorGmsh(ierr);
     int idHole  = gmshModelOccAddDisk(x1, y1, 0, r1, r1, -1,NULL,0,NULL,0,&ierr);    
     ErrorGmsh(ierr);
-    
-    int plate[] = {idPlate, 2};
-    int notch[] = {idNotch, 1};
-    int hole[] = {idHole, 1};
-    gmshModelOccCut(plate, 1, notch, 1, NULL, NULL, NULL, NULL, NULL, -1, 1, 1, &ierr); 
+
+    int plate[] = {2,idPlate};
+    int notch[] = {2,idNotch};
+    int hole[] = {2,idHole};
+    gmshModelOccCut(plate, 2, notch, 2, NULL, NULL, NULL, NULL, NULL, -1, 1, 1, &ierr); 
     ErrorGmsh(ierr);
-    gmshModelOccCut(plate, 1, hole, 1, NULL, NULL, NULL, NULL, NULL, -1, 1, 1, &ierr); 
+    gmshModelOccCut(plate, 2, hole, 2, NULL, NULL, NULL, NULL, NULL, -1, 1, 1, &ierr); 
     ErrorGmsh(ierr);
- 
-//
+
 //  -2- D�finition de la fonction callback pour la taille de r�f�rence
 //      Synchronisation de OpenCascade avec gmsh
 //      G�n�ration du maillage (avec l'option Mesh.SaveAll :-)
