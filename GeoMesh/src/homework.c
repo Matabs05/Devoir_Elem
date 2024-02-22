@@ -1,10 +1,16 @@
 #include "fem.h"
 
 
-//Matthieu
+double Hermite(double x,double h0,double h,double dist,double d0){
+    double a = h0;
+    double b = 0;
+    double c = (-3*(h0-h))/(d0*d0);
+    double d = (2*(h0-h))/(d0*d0*d0);
+    return a+b*dist+c*dist*dist+d*dist*dist*dist;
+}
 
 double geoSize(double x, double y){
-
+    
     femGeo* theGeometry = geoGetGeometry();
     
     double h = theGeometry->h;
@@ -13,6 +19,8 @@ double geoSize(double x, double y){
     double r0 = theGeometry->rNotch;
     double h0 = theGeometry->hNotch;
     double d0 = theGeometry->dNotch;
+    double d0_star = d0+r0;
+    double h0_s = h0+r0;
   
     
     double x1 = theGeometry->xHole;
@@ -20,6 +28,29 @@ double geoSize(double x, double y){
     double r1 = theGeometry->rHole;
     double h1 = theGeometry->hHole;
     double d1 = theGeometry->dHole;
+    double dist_hole = sqrt((x-x1)*(x-x1)+(y-y1)*(y-y1));
+    double dist_notch = sqrt((x-x0)*(x-x0)+(y-y0)*(y-y0));
+    double d1_star = d1+r1;
+    double h1_s = h1+r1;
+    
+    if (dist_notch <= d0_star ) {
+    // Utilise hermiteInterpolation_Notch
+        return Hermite(x0,h0,h,dist_notch,d0_star);
+    }else if (dist_hole <= d1_star) {
+    // Utilise hermiteInterpolation_Hole
+        return Hermite(x1,h1,h,dist_hole,d1_star);
+    }else if(dist_notch >d0_star && dist_hole > d1_star){
+        return h;
+    }else if(d0_star = r0 && d1_star >r1){
+        printf("matthieu");
+        return h0;
+    }else if(d1_star == r1 && d0_star > r0){
+        printf("absil");
+        return h1;
+    }
+    
+
+
 
 
 //
@@ -27,13 +58,12 @@ double geoSize(double x, double y){
 //     
 // Your contribution starts here ....
 //
-    
+
      
-    return h;
     
 //   
 // Your contribution ends here :-)
-//
+// 
 
 }
 
@@ -93,19 +123,19 @@ void geoMeshGenerate() {
 //
 //  Generation de quads :-)
 //
-//    gmshOptionSetNumber("Mesh.SaveAll", 1, &ierr);
-//    gmshOptionSetNumber("Mesh.RecombineAll", 1, &ierr);
-//    gmshOptionSetNumber("Mesh.Algorithm", 8, &ierr);  chk(ierr);
-//    gmshOptionSetNumber("Mesh.RecombinationAlgorithm", 1.0, &ierr);  chk(ierr);
-//    gmshModelGeoMeshSetRecombine(2,1,45,&ierr);  chk(ierr);
-//    gmshModelMeshGenerate(2, &ierr);  
+    //    gmshOptionSetNumber("Mesh.SaveAll", 1, &ierr);
+    //    gmshOptionSetNumber("Mesh.RecombineAll", 1, &ierr);
+    //    gmshOptionSetNumber("Mesh.Algorithm", 8, &ierr);  chk(ierr);  
+    //    gmshOptionSetNumber("Mesh.RecombinationAlgorithm", 1.0, &ierr);  chk(ierr); 
+    //    gmshModelGeoMeshSetRecombine(2,1,45,&ierr);  chk(ierr);  
+    //    gmshModelMeshGenerate(2, &ierr);  
    
  
 //
 //  Plot of Fltk
 //
 //   gmshFltkInitialize(&ierr);
-//   gmshFltkRun(&ierr);  chk(ierr);
+//   gmshFltkRun(&ierr);  chk(ierr); 
 //
     
 }
