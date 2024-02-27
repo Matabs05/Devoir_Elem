@@ -34,13 +34,13 @@ double geoSize(double x, double y){
     if(dist_notch < d0_star && dist_hole < d1_star){
         return fmin(Hermite(x0,h0,h,dist_notch,d0_star),Hermite(x1,h1,h,dist_hole,d1_star));
     }
-    if (dist_notch < d0_star ) {
+    else if (dist_notch < d0_star && dist_hole > d1_star) {
     // Utilise hermiteInterpolation_Notch
         return Hermite(x0,h0,h,dist_notch,d0_star);
-    }else if (dist_hole < d1_star) {
+    }else if (dist_hole < d1_star && dist_notch > d0 ) {
     // Utilise hermiteInterpolation_Hole
         return Hermite(x1,h1,h,dist_hole,d1_star);
-    }else if(dist_notch >d0_star && dist_hole > d1_star){
+    }else {
         return h;
     }
 }
