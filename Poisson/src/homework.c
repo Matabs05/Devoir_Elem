@@ -141,7 +141,7 @@ void femPoissonSolve(femPoissonProblem *theProblem)
         // A completer :-)
     
     femFullSystemEliminate(theSystem);
-
+    //izqugriugiuhz
 
     // A completer :-)
 }
