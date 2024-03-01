@@ -103,6 +103,36 @@ void femPoissonSolve(femPoissonProblem *theProblem)
     int iElem,iInteg,iEdge,i,j,map[4];
     int nLocal = theMesh->nLocalNode;
 
+    for (iElem = 0; iElem < theMesh->nElem; iElem++) {
+        femPoissonLocal(theProblem,iElem,map,x,y);  
+        for (iInteg=0; iInteg < theRule->n; iInteg++) {    
+            double xsi    = theRule->xsi[iInteg];
+            double eta    = theRule->eta[iInteg];
+            double weight = theRule->weight[iInteg];  
+            femDiscretePhi2(theSpace,xsi,eta,phi);
+            femDiscreteDphi2(theSpace,xsi,eta,dphidxsi,dphideta);
+            double dxdxsi = 0;
+            double dxdeta = 0;
+            double dydxsi = 0; 
+            double dydeta = 0;
+            for (i = 0; i < theSpace->n; i++) {  
+                dxdxsi += x[i]*dphidxsi[i];       
+                dxdeta += x[i]*dphideta[i];   
+                dydxsi += y[i]*dphidxsi[i];   
+                dydeta += y[i]*dphideta[i]; }
+            double jac = dxdxsi * dydeta - dxdeta * dydxsi;
+            for (i = 0; i < theSpace->n; i++) {    
+                dphidx[i] = (dphidxsi[i] * dydeta - dphideta[i] * dydxsi) / jac;       
+                dphidy[i] = (dphideta[i] * dxdxsi - dphidxsi[i] * dxdeta) / jac; }            
+            for (i = 0; i < theSpace->n; i++) { 
+                theSystem->B[map[i]] += phi[i] * jac *weight;
+                for(j = 0; j < theSpace->n; j++) {
+                    theSystem->A[map[i]][map[j]] += (dphidx[i] * dphidx[j] 
+                                                   + dphidy[i] * dphidy[j]) * jac * weight; }}                                                                                            
+            
+                 }}
+
+
     // A completer :-)
 }
 
