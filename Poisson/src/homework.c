@@ -131,6 +131,7 @@ void femPoissonSolve(femPoissonProblem *theProblem)
                                                    + dphidy[i] * dphidy[j]) * jac * weight; }}                                                                                            
             
                  }}
+                 femPoissonFindBoundaryNodes(theProblem);
     for (iEdge = 0; iEdge < theBoundary->nElem; iEdge++) { 
         for (i = 0; i < nLocal; i++) {
             int iNode = theBoundary->elem[iEdge*nLocal+i];
