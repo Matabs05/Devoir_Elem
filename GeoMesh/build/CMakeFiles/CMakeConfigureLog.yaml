@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -70,13 +70,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_80eb8/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_80eb8.dir\\build.make CMakeFiles/cmTC_80eb8.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl'
-        Building C object CMakeFiles/cmTC_80eb8.dir/CMakeCCompilerABI.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_8569a/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8569a.dir\\build.make CMakeFiles/cmTC_8569a.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a'
+        Building C object CMakeFiles/cmTC_8569a.dir/CMakeCCompilerABI.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -84,8 +84,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 10.3.0 (tdm64-1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
-         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccqs500v.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccSmNxeX.s
         GNU C17 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.23-GMP
         
@@ -106,17 +106,17 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 68074fcaab9f6b1377b55f7cea05149b
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
-         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccqs500v.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccSmNxeX.s
         GNU assembler version 2.36.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.36.1
         COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../libexec/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../lib/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_80eb8.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_80eb8.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_80eb8.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_80eb8.dir/objects.a @CMakeFiles\\cmTC_80eb8.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_80eb8.dir/objects.a -Wl,--no-whole-archive -o cmTC_80eb8.exe -Wl,--out-implib,libcmTC_80eb8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_8569a.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8569a.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8569a.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_8569a.dir/objects.a @CMakeFiles\\cmTC_8569a.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_8569a.dir/objects.a -Wl,--no-whole-archive -o cmTC_8569a.exe -Wl,--out-implib,libcmTC_8569a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
         Using built-in specs.
         COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe
@@ -127,10 +127,10 @@ events:
         gcc version 10.3.0 (tdm64-1) 
         COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../libexec/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../lib/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_80eb8.exe' '-mtune=generic' '-march=x86-64'
-         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccWEFoci.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_80eb8.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_80eb8.dir/objects.a --no-whole-archive --out-implib libcmTC_80eb8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_80eb8.exe' '-mtune=generic' '-march=x86-64'
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8569a.exe' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccT2KMc6.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_8569a.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_8569a.dir/objects.a --no-whole-archive --out-implib libcmTC_8569a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8569a.exe' '-mtune=generic' '-march=x86-64'
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a'
         
       exitCode: 0
   -
@@ -164,13 +164,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl']
+        ignore line: [Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_80eb8/fast]
-        ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_80eb8.dir\\build.make CMakeFiles/cmTC_80eb8.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-84ekfl']
-        ignore line: [Building C object CMakeFiles/cmTC_80eb8.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\TDM-GCC-64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_8569a/fast]
+        ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8569a.dir\\build.make CMakeFiles/cmTC_8569a.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0zg58a']
+        ignore line: [Building C object CMakeFiles/cmTC_8569a.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\TDM-GCC-64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -178,8 +178,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 10.3.0 (tdm64-1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccqs500v.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccSmNxeX.s]
         ignore line: [GNU C17 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.23-GMP]
         ignore line: []
@@ -200,8 +200,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 68074fcaab9f6b1377b55f7cea05149b]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccqs500v.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccSmNxeX.s]
         ignore line: [GNU assembler version 2.36.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.36.1]
         ignore line: [COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/]
         ignore line: [C:/TDM-GCC-64/bin/../libexec/gcc/]
@@ -212,12 +212,12 @@ events:
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_80eb8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_80eb8.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_80eb8.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_80eb8.dir/objects.a]
-        ignore line: [C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_80eb8.dir/objects.a @CMakeFiles\\cmTC_80eb8.dir\\objects1.rsp]
-        ignore line: [C:\\TDM-GCC-64\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_80eb8.dir/objects.a -Wl --no-whole-archive -o cmTC_80eb8.exe -Wl --out-implib libcmTC_80eb8.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8569a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_8569a.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8569a.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8569a.dir/objects.a]
+        ignore line: [C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_8569a.dir/objects.a @CMakeFiles\\cmTC_8569a.dir\\objects1.rsp]
+        ignore line: [C:\\TDM-GCC-64\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_8569a.dir/objects.a -Wl --no-whole-archive -o cmTC_8569a.exe -Wl --out-implib libcmTC_8569a.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe]
@@ -235,13 +235,13 @@ events:
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_80eb8.exe' '-mtune=generic' '-march=x86-64']
-        link line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccWEFoci.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_80eb8.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_80eb8.dir/objects.a --no-whole-archive --out-implib libcmTC_80eb8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8569a.exe' '-mtune=generic' '-march=x86-64']
+        link line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccT2KMc6.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_8569a.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_8569a.dir/objects.a --no-whole-archive --out-implib libcmTC_8569a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
           arg [C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll] ==> ignore
           arg [-plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccWEFoci.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccT2KMc6.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -271,7 +271,7 @@ events:
           arg [--undefined=__xl_f] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_80eb8.exe] ==> ignore
+          arg [cmTC_8569a.exe] ==> ignore
           arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o]
           arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0]
@@ -281,10 +281,10 @@ events:
           arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..]
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_80eb8.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_8569a.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_80eb8.dll.a] ==> ignore
+          arg [libcmTC_8569a.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -341,8 +341,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -350,13 +350,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_9da83/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9da83.dir\\build.make CMakeFiles/cmTC_9da83.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47'
-        Building CXX object CMakeFiles/cmTC_9da83.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\TDM-GCC-64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_42ac1/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_42ac1.dir\\build.make CMakeFiles/cmTC_42ac1.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c'
+        Building CXX object CMakeFiles/cmTC_42ac1.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\TDM-GCC-64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\TDM-GCC-64\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -364,8 +364,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 10.3.0 (tdm64-1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
-         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\cc0z0AQb.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccKvCG3d.s
         GNU C++14 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.23-GMP
         
@@ -392,17 +392,17 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 5e49fa89ed7bfe906173ae8e94e08de6
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
-         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\cc0z0AQb.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccKvCG3d.s
         GNU assembler version 2.36.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.36.1
         COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../libexec/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../lib/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_9da83.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9da83.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9da83.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_9da83.dir/objects.a @CMakeFiles\\cmTC_9da83.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\g++.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_9da83.dir/objects.a -Wl,--no-whole-archive -o cmTC_9da83.exe -Wl,--out-implib,libcmTC_9da83.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_42ac1.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_42ac1.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_42ac1.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_42ac1.dir/objects.a @CMakeFiles\\cmTC_42ac1.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\g++.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_42ac1.dir/objects.a -Wl,--no-whole-archive -o cmTC_42ac1.exe -Wl,--out-implib,libcmTC_42ac1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
         Using built-in specs.
         COLLECT_GCC=C:\\TDM-GCC-64\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe
@@ -413,10 +413,10 @@ events:
         gcc version 10.3.0 (tdm64-1) 
         COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../libexec/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../lib/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9da83.exe' '-mtune=generic' '-march=x86-64'
-         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccatyOWc.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_9da83.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_9da83.dir/objects.a --no-whole-archive --out-implib libcmTC_9da83.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9da83.exe' '-mtune=generic' '-march=x86-64'
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_42ac1.exe' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccx8yxjU.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_42ac1.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_42ac1.dir/objects.a --no-whole-archive --out-implib libcmTC_42ac1.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_42ac1.exe' '-mtune=generic' '-march=x86-64'
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c'
         
       exitCode: 0
   -
@@ -456,13 +456,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47']
+        ignore line: [Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_9da83/fast]
-        ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9da83.dir\\build.make CMakeFiles/cmTC_9da83.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-wpxn47']
-        ignore line: [Building CXX object CMakeFiles/cmTC_9da83.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\TDM-GCC-64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_42ac1/fast]
+        ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_42ac1.dir\\build.make CMakeFiles/cmTC_42ac1.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-ibg10c']
+        ignore line: [Building CXX object CMakeFiles/cmTC_42ac1.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\TDM-GCC-64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\TDM-GCC-64\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -470,8 +470,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 10.3.0 (tdm64-1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\cc0z0AQb.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1plus.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccKvCG3d.s]
         ignore line: [GNU C++14 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.23-GMP]
         ignore line: []
@@ -498,8 +498,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 5e49fa89ed7bfe906173ae8e94e08de6]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\cc0z0AQb.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccKvCG3d.s]
         ignore line: [GNU assembler version 2.36.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.36.1]
         ignore line: [COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/]
         ignore line: [C:/TDM-GCC-64/bin/../libexec/gcc/]
@@ -510,12 +510,12 @@ events:
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9da83.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_9da83.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9da83.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9da83.dir/objects.a]
-        ignore line: [C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_9da83.dir/objects.a @CMakeFiles\\cmTC_9da83.dir\\objects1.rsp]
-        ignore line: [C:\\TDM-GCC-64\\bin\\g++.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_9da83.dir/objects.a -Wl --no-whole-archive -o cmTC_9da83.exe -Wl --out-implib libcmTC_9da83.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_42ac1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_42ac1.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_42ac1.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_42ac1.dir/objects.a]
+        ignore line: [C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_42ac1.dir/objects.a @CMakeFiles\\cmTC_42ac1.dir\\objects1.rsp]
+        ignore line: [C:\\TDM-GCC-64\\bin\\g++.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_42ac1.dir/objects.a -Wl --no-whole-archive -o cmTC_42ac1.exe -Wl --out-implib libcmTC_42ac1.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\TDM-GCC-64\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe]
@@ -533,13 +533,13 @@ events:
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9da83.exe' '-mtune=generic' '-march=x86-64']
-        link line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccatyOWc.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_9da83.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_9da83.dir/objects.a --no-whole-archive --out-implib libcmTC_9da83.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_42ac1.exe' '-mtune=generic' '-march=x86-64']
+        link line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccx8yxjU.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_42ac1.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. --whole-archive CMakeFiles\\cmTC_42ac1.dir/objects.a --no-whole-archive --out-implib libcmTC_42ac1.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
           arg [C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll] ==> ignore
           arg [-plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccatyOWc.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\ljacq\\AppData\\Local\\Temp\\ccx8yxjU.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -569,7 +569,7 @@ events:
           arg [--undefined=__xl_f] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_9da83.exe] ==> ignore
+          arg [cmTC_42ac1.exe] ==> ignore
           arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o]
           arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0]
@@ -579,10 +579,10 @@ events:
           arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..]
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_9da83.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_42ac1.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_9da83.dll.a] ==> ignore
+          arg [libcmTC_42ac1.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -645,8 +645,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-9tuyn1"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-9tuyn1"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dg230f"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dg230f"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw/CMake/modules"
@@ -654,19 +654,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-9tuyn1'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dg230f'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_1d2f6/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1d2f6.dir\\build.make CMakeFiles/cmTC_1d2f6.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-9tuyn1'
-        Building C object CMakeFiles/cmTC_1d2f6.dir/src.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_1d2f6.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9tuyn1\\src.c
-        Linking C executable cmTC_1d2f6.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1d2f6.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1d2f6.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_1d2f6.dir/objects.a @CMakeFiles\\cmTC_1d2f6.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_1d2f6.dir/objects.a -Wl,--no-whole-archive -o cmTC_1d2f6.exe -Wl,--out-implib,libcmTC_1d2f6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1d2f6.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-9tuyn1'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_9dc86/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9dc86.dir\\build.make CMakeFiles/cmTC_9dc86.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dg230f'
+        Building C object CMakeFiles/cmTC_9dc86.dir/src.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_9dc86.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dg230f\\src.c
+        Linking C executable cmTC_9dc86.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9dc86.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9dc86.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_9dc86.dir/objects.a @CMakeFiles\\cmTC_9dc86.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_9dc86.dir/objects.a -Wl,--no-whole-archive -o cmTC_9dc86.exe -Wl,--out-implib,libcmTC_9dc86.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9dc86.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dg230f'
         
       exitCode: 0
   -
@@ -677,8 +677,8 @@ events:
     checks:
       - "Looking for dinput.h"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-g8et7i"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-g8et7i"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0o8bul"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0o8bul"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw/CMake/modules"
@@ -686,19 +686,19 @@ events:
       variable: "DINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-g8et7i'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0o8bul'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_44516/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_44516.dir\\build.make CMakeFiles/cmTC_44516.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-g8et7i'
-        Building C object CMakeFiles/cmTC_44516.dir/CheckIncludeFile.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_44516.dir\\CheckIncludeFile.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8et7i\\CheckIncludeFile.c
-        Linking C executable cmTC_44516.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_44516.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_44516.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_44516.dir/objects.a @CMakeFiles\\cmTC_44516.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_44516.dir/objects.a -Wl,--no-whole-archive -o cmTC_44516.exe -Wl,--out-implib,libcmTC_44516.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_44516.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-g8et7i'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_cafb1/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cafb1.dir\\build.make CMakeFiles/cmTC_cafb1.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0o8bul'
+        Building C object CMakeFiles/cmTC_cafb1.dir/CheckIncludeFile.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_cafb1.dir\\CheckIncludeFile.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0o8bul\\CheckIncludeFile.c
+        Linking C executable cmTC_cafb1.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_cafb1.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_cafb1.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_cafb1.dir/objects.a @CMakeFiles\\cmTC_cafb1.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_cafb1.dir/objects.a -Wl,--no-whole-archive -o cmTC_cafb1.exe -Wl,--out-implib,libcmTC_cafb1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_cafb1.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-0o8bul'
         
       exitCode: 0
   -
@@ -709,8 +709,8 @@ events:
     checks:
       - "Looking for xinput.h"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-nq7a9v"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-nq7a9v"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-u6h5r4"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-u6h5r4"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw/CMake/modules"
@@ -718,19 +718,19 @@ events:
       variable: "XINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-nq7a9v'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-u6h5r4'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_5d684/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5d684.dir\\build.make CMakeFiles/cmTC_5d684.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-nq7a9v'
-        Building C object CMakeFiles/cmTC_5d684.dir/CheckIncludeFile.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5d684.dir\\CheckIncludeFile.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nq7a9v\\CheckIncludeFile.c
-        Linking C executable cmTC_5d684.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5d684.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5d684.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_5d684.dir/objects.a @CMakeFiles\\cmTC_5d684.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_5d684.dir/objects.a -Wl,--no-whole-archive -o cmTC_5d684.exe -Wl,--out-implib,libcmTC_5d684.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_5d684.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-nq7a9v'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_ba80b/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ba80b.dir\\build.make CMakeFiles/cmTC_ba80b.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-u6h5r4'
+        Building C object CMakeFiles/cmTC_ba80b.dir/CheckIncludeFile.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ba80b.dir\\CheckIncludeFile.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u6h5r4\\CheckIncludeFile.c
+        Linking C executable cmTC_ba80b.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ba80b.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ba80b.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_ba80b.dir/objects.a @CMakeFiles\\cmTC_ba80b.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_ba80b.dir/objects.a -Wl,--no-whole-archive -o cmTC_ba80b.exe -Wl,--out-implib,libcmTC_ba80b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ba80b.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-u6h5r4'
         
       exitCode: 0
   -
@@ -743,8 +743,8 @@ events:
     checks:
       - "Performing Test _GLFW_HAS_DEP"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-d1dmy8"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-d1dmy8"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-qw2iyz"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-qw2iyz"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw/CMake/modules"
@@ -752,19 +752,19 @@ events:
       variable: "_GLFW_HAS_DEP"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-d1dmy8'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-qw2iyz'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_22537/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_22537.dir\\build.make CMakeFiles/cmTC_22537.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-d1dmy8'
-        Building C object CMakeFiles/cmTC_22537.dir/src.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe -D_GLFW_HAS_DEP  -Wl,--nxcompat -o CMakeFiles\\cmTC_22537.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d1dmy8\\src.c
-        Linking C executable cmTC_22537.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_22537.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_22537.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_22537.dir/objects.a @CMakeFiles\\cmTC_22537.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe  -Wl,--nxcompat -Wl,--whole-archive CMakeFiles\\cmTC_22537.dir/objects.a -Wl,--no-whole-archive -o cmTC_22537.exe -Wl,--out-implib,libcmTC_22537.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_22537.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-d1dmy8'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_82d3f/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_82d3f.dir\\build.make CMakeFiles/cmTC_82d3f.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-qw2iyz'
+        Building C object CMakeFiles/cmTC_82d3f.dir/src.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe -D_GLFW_HAS_DEP  -Wl,--nxcompat -o CMakeFiles\\cmTC_82d3f.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qw2iyz\\src.c
+        Linking C executable cmTC_82d3f.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_82d3f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_82d3f.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_82d3f.dir/objects.a @CMakeFiles\\cmTC_82d3f.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe  -Wl,--nxcompat -Wl,--whole-archive CMakeFiles\\cmTC_82d3f.dir/objects.a -Wl,--no-whole-archive -o cmTC_82d3f.exe -Wl,--out-implib,libcmTC_82d3f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_82d3f.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-qw2iyz'
         
       exitCode: 0
   -
@@ -777,8 +777,8 @@ events:
     checks:
       - "Performing Test _GLFW_HAS_ASLR"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-sxel9w"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-sxel9w"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-68uf0h"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-68uf0h"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw/CMake/modules"
@@ -786,19 +786,19 @@ events:
       variable: "_GLFW_HAS_ASLR"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-sxel9w'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-68uf0h'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_240b4/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_240b4.dir\\build.make CMakeFiles/cmTC_240b4.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-sxel9w'
-        Building C object CMakeFiles/cmTC_240b4.dir/src.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe -D_GLFW_HAS_ASLR  -Wl,--dynamicbase -o CMakeFiles\\cmTC_240b4.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxel9w\\src.c
-        Linking C executable cmTC_240b4.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_240b4.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_240b4.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_240b4.dir/objects.a @CMakeFiles\\cmTC_240b4.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe  -Wl,--dynamicbase -Wl,--whole-archive CMakeFiles\\cmTC_240b4.dir/objects.a -Wl,--no-whole-archive -o cmTC_240b4.exe -Wl,--out-implib,libcmTC_240b4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_240b4.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-sxel9w'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_309cc/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_309cc.dir\\build.make CMakeFiles/cmTC_309cc.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-68uf0h'
+        Building C object CMakeFiles/cmTC_309cc.dir/src.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe -D_GLFW_HAS_ASLR  -Wl,--dynamicbase -o CMakeFiles\\cmTC_309cc.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-68uf0h\\src.c
+        Linking C executable cmTC_309cc.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_309cc.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_309cc.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_309cc.dir/objects.a @CMakeFiles\\cmTC_309cc.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe  -Wl,--dynamicbase -Wl,--whole-archive CMakeFiles\\cmTC_309cc.dir/objects.a -Wl,--no-whole-archive -o cmTC_309cc.exe -Wl,--out-implib,libcmTC_309cc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_309cc.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-68uf0h'
         
       exitCode: 0
   -
@@ -811,8 +811,8 @@ events:
     checks:
       - "Performing Test _GLFW_HAS_64ASLR"
     directories:
-      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dml159"
-      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dml159"
+      source: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-juc3sn"
+      binary: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-juc3sn"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw/CMake/modules"
@@ -820,19 +820,19 @@ events:
       variable: "_GLFW_HAS_64ASLR"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dml159'
+        Change Dir: 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-juc3sn'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_0fc2f/fast
-        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0fc2f.dir\\build.make CMakeFiles/cmTC_0fc2f.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dml159'
-        Building C object CMakeFiles/cmTC_0fc2f.dir/src.c.obj
-        C:\\TDM-GCC-64\\bin\\gcc.exe -D_GLFW_HAS_64ASLR  -Wl,--high-entropy-va -o CMakeFiles\\cmTC_0fc2f.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dml159\\src.c
-        Linking C executable cmTC_0fc2f.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_0fc2f.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_0fc2f.dir/objects.a
-        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_0fc2f.dir/objects.a @CMakeFiles\\cmTC_0fc2f.dir\\objects1.rsp
-        C:\\TDM-GCC-64\\bin\\gcc.exe  -Wl,--high-entropy-va -Wl,--whole-archive CMakeFiles\\cmTC_0fc2f.dir/objects.a -Wl,--no-whole-archive -o cmTC_0fc2f.exe -Wl,--out-implib,libcmTC_0fc2f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_0fc2f.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-dml159'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_89767/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_89767.dir\\build.make CMakeFiles/cmTC_89767.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-juc3sn'
+        Building C object CMakeFiles/cmTC_89767.dir/src.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe -D_GLFW_HAS_64ASLR  -Wl,--high-entropy-va -o CMakeFiles\\cmTC_89767.dir\\src.c.obj -c C:\\Users\\ljacq\\Documents\\Devoir_Elem\\GeoMesh\\build\\CMakeFiles\\CMakeScratch\\TryCompile-juc3sn\\src.c
+        Linking C executable cmTC_89767.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_89767.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_89767.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_89767.dir/objects.a @CMakeFiles\\cmTC_89767.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe  -Wl,--high-entropy-va -Wl,--whole-archive CMakeFiles\\cmTC_89767.dir/objects.a -Wl,--no-whole-archive -o cmTC_89767.exe -Wl,--out-implib,libcmTC_89767.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_89767.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/CMakeScratch/TryCompile-juc3sn'
         
       exitCode: 0
 ...
