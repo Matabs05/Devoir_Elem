@@ -131,6 +131,15 @@ void femPoissonSolve(femPoissonProblem *theProblem)
                                                    + dphidy[i] * dphidy[j]) * jac * weight; }}                                                                                            
             
                  }}
+    for (iEdge = 0; iEdge < theBoundary->nElem; iEdge++) { 
+        for (i = 0; i < nLocal; i++) {
+            int iNode = theBoundary->elem[iEdge*nLocal+i];
+            double xloc = theMesh->nodes->X[iNode]; 
+            double yloc = theMesh->nodes->Y[iNode];
+            femFullSystemConstrain(theSystem,iNode,0.0); } }   
+        // A completer :-)
+    
+    femFullSystemEliminate(theSystem);
 
 
     // A completer :-)
