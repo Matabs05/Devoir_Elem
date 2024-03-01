@@ -130,20 +130,17 @@ void femPoissonSolve(femPoissonProblem *theProblem)
                     theSystem->A[map[i]][map[j]] += (dphidx[i] * dphidx[j] 
                                                    + dphidy[i] * dphidy[j]) * jac * weight; }}                                                                                            
             
-                 }}
-                 femPoissonFindBoundaryNodes(theProblem);
+    }}
+                
     for (iEdge = 0; iEdge < theBoundary->nElem; iEdge++) { 
-        for (i = 0; i < nLocal; i++) {
-            int iNode = theBoundary->elem[iEdge*nLocal+i];
-            double xloc = theMesh->nodes->X[iNode]; 
-            double yloc = theMesh->nodes->Y[iNode];
-            femFullSystemConstrain(theSystem,iNode,0.0); } }   
-        // A completer :-)
+        int iNode = theBoundary->elem[iEdge];
+        femFullSystemConstrain(theSystem,iNode,0.0);}  
+        
     
     femFullSystemEliminate(theSystem);
 
 
-    // A completer :-)
+    // A completer :-)*/
 }
 
 # endif
