@@ -21,14 +21,16 @@ femPoissonProblem *femPoissonCreate(const char *filename)
 # endif
 # ifndef NOPOISSONBOUNDARY
 
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
 void femPoissonFindBoundaryNodes(femPoissonProblem *theProblem)
 {
     femGeo* theGeometry = theProblem->geo;  
     femMesh* theEdges = theGeometry->theEdges; 
-    int nBoundary = 0;
     
-    //  A completer :-)
-
+    int nBoundary = theEdges->nElem;
 
     femDomain *theBoundary = malloc(sizeof(femDomain));
     theGeometry->nDomains++;
@@ -38,7 +40,21 @@ void femPoissonFindBoundaryNodes(femPoissonProblem *theProblem)
     theBoundary->elem = malloc(nBoundary*sizeof(int));
     theBoundary->mesh = NULL;
     sprintf(theBoundary->name,"Boundary");
- 
+    
+    int copie[theEdges->nLocalNode * nBoundary];
+    for (int i = 0; i < theEdges->nLocalNode * nBoundary; i++){
+        copie[i] = theEdges->elem[i]; 
+    }
+    qsort(copie, theEdges->nLocalNode * nBoundary, sizeof(int), compare);
+    int index = 0;
+    for (int i = 0; i < theEdges->nLocalNode * nBoundary; i++){
+        if (i == 0 || copie[i] != copie[i-1]){
+            theBoundary->elem[index] = copie[i];
+            index++;
+        }
+    }
+
+    
     // A completer :-)
 
 }
@@ -60,6 +76,13 @@ void femPoissonLocal(femPoissonProblem *theProblem, const int iElem, int *map, d
     femMesh *theMesh = theProblem->geo->theElements;
     
     //  A completer :-)
+    
+    for(int i=0;i<theMesh->nLocalNode;i++){
+        map[i] = theMesh->elem[iElem*theMesh->nLocalNode+i];
+        x[i] = theMesh->nodes->X[map[i]];
+        y[i] = theMesh->nodes->Y[map[i]];
+    }
+    
 
 }
 
