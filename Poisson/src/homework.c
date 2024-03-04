@@ -47,7 +47,7 @@ void femPoissonFindBoundaryNodes(femPoissonProblem *theProblem)
     femGeo* theGeometry = theProblem->geo;  
     femMesh* theEdges = theGeometry->theEdges; 
     
-    int countDistinct(int *arr, int n);
+    
 
     int nBoundary = countDistinct(theEdges->elem,2*theEdges->nElem);
 
