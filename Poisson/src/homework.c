@@ -24,60 +24,43 @@ femPoissonProblem *femPoissonCreate(const char *filename)
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
-int countDistinct(int arr[], int n) {
-    int distinct = 1; // Initialisation du compteur à 1 pour le premier élément
-    // Parcourt le tableau
-    for (int i = 1; i < n; i++) {
-        int j;
-        // Vérifie si l'élément est déjà présent dans le sous-tableau précédent
-        for (j = 0; j < i; j++) {
-            if (arr[i] == arr[j])
-                break;
-        }
-        // Si aucune occurrence de l'élément n'est trouvée, incrémente le compteur
-        if (i == j)
-            distinct++;
-    }
-    return distinct;
-    
-}
-
 
 void femPoissonFindBoundaryNodes(femPoissonProblem *theProblem)
 {
     femGeo* theGeometry = theProblem->geo;  
     femMesh* theEdges = theGeometry->theEdges; 
-    
-    
+    int nBoundary = 0;
 
-    
-    int a = countDistinct(theEdges->elem, theEdges->nElem*2);
-    
-    
+    int *copie= malloc(theEdges->nLocalNode *theEdges->nElem * sizeof(int) );
+    for (int i = 0; i < theEdges->nLocalNode*theEdges->nElem; i++){
+        copie[i] = theEdges->elem[i]; 
+    }
+    qsort(copie, theEdges->nLocalNode*theEdges->nElem, sizeof(int), compare);
+    nBoundary++;
+    for(int i = 1; i < theEdges->nLocalNode * theEdges->nElem; i++){
+        if( copie[i] != copie[i-1]){
+            nBoundary++;
+        }
+    }
 
     femDomain *theBoundary = malloc(sizeof(femDomain));
     theGeometry->nDomains++;
     theGeometry->theDomains = realloc(theGeometry->theDomains,theGeometry->nDomains*sizeof(femDomain*));
     theGeometry->theDomains[theGeometry->nDomains-1] = theBoundary;
-    theBoundary->nElem = a;
-    theBoundary->elem = malloc(a*sizeof(int));
+    theBoundary->nElem = nBoundary;
+    theBoundary->elem = malloc(nBoundary*sizeof(int));
     theBoundary->mesh = NULL;
     sprintf(theBoundary->name,"Boundary");
     
-    int copie[theEdges->nLocalNode * a];
-    for (int i = 0; i < theEdges->nLocalNode * a; i++){
-        copie[i] = theEdges->elem[i]; 
-    }
-    qsort(copie, theEdges->nLocalNode * a, sizeof(int), compare);
+    
     int index = 0;
-    for (int i = 0; i < theEdges->nLocalNode * a; i++){
+    for (int i = 0; i < theEdges->nLocalNode * theEdges->nElem; i++){
         if (i == 0 || copie[i] != copie[i-1]){
             theBoundary->elem[index] = copie[i];
             index++;
         }
     }
-
-    
+    free(copie);    
     // A completer :-)
 
 }
