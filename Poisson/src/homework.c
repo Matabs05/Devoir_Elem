@@ -24,13 +24,32 @@ femPoissonProblem *femPoissonCreate(const char *filename)
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
+int countDistinct(int arr[], int n) {
+    int distinct = 1; // Initialisation du compteur à 1 pour le premier élément
+    // Parcourt le tableau
+    for (int i = 1; i < n; i++) {
+        int j;
+        // Vérifie si l'élément est déjà présent dans le sous-tableau précédent
+        for (j = 0; j < i; j++) {
+            if (arr[i] == arr[j])
+                break;
+        }
+        // Si aucune occurrence de l'élément n'est trouvée, incrémente le compteur
+        if (i == j)
+            distinct++;
+    }
+    return distinct;
+    
+}
 
 void femPoissonFindBoundaryNodes(femPoissonProblem *theProblem)
 {
     femGeo* theGeometry = theProblem->geo;  
     femMesh* theEdges = theGeometry->theEdges; 
     
-    int nBoundary = theEdges->nElem;
+    int countDistinct(int *arr, int n);
+
+    int nBoundary = countDistinct(theEdges->elem,2*theEdges->nElem);
 
     femDomain *theBoundary = malloc(sizeof(femDomain));
     theGeometry->nDomains++;
@@ -62,13 +81,14 @@ void femPoissonFindBoundaryNodes(femPoissonProblem *theProblem)
 # endif
 # ifndef NOPOISSONFREE
 
-void femPoissonFree(femPoissonProblem *theProblem){
-
+void femPoissonFree(femPoissonProblem *theProblem)
+{
     geoMeshFree(theProblem->geo);
     femIntegrationFree(theProblem->rule);
     femDiscreteFree(theProblem->space);
     femFullSystemFree(theProblem->system);
     free(theProblem);
+    //version 1
     // A completer :-)
 }
     
