@@ -98,15 +98,15 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/ljacq/Documents/Devoir_Elem/Poisson/glfw/include"
+					"path" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/Poisson/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/ljacq/Documents/Devoir_Elem/Poisson/glfw/src"
+					"path" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/Poisson/glfw/src"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/ljacq/Documents/Devoir_Elem/Poisson/build/glfw/src"
+					"path" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/Poisson/build/glfw/src"
 				}
 			],
 			"language" : "C",
