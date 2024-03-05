@@ -15,7 +15,7 @@ int main(void)
 {   
     
  
-    femPoissonProblem* theProblem = femPoissonCreate("..\\data\\tiny.txt");
+    femPoissonProblem* theProblem = femPoissonCreate("..\\data\\exemple.txt");
     femPoissonFindBoundaryNodes(theProblem);
     geoMeshPrint(theProblem->geo);
     
