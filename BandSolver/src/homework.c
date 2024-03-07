@@ -8,7 +8,9 @@
 void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
 {
     int i;
-    
+    int * renum = malloc(sizeof(int)*theMesh->nodes->nNodes);
+    for (i = 0; i < theMesh->nodes->nNodes; i++) 
+        renum[i] = i;
     switch (renumType) {
         case FEM_NO :
             for (i = 0; i < theMesh->nodes->nNodes; i++) 
@@ -35,8 +37,20 @@ void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
 
 int femMeshComputeBand(femMesh *theMesh)
 {
-    int myBand = theMesh->nodes->nNodes;
-    return(myBand);
+    int myBand = 0;
+    int max,min,map[theMesh->nLocalNode],iElem;
+    
+    for (int iElem = 0; iElem < theMesh->nElem; iElem++) {
+        for (int j = 0; j < theMesh->nLocalNode; j++) 
+            map[j] = theMesh->nodes->number[theMesh->elem[iElem*theMesh->nLocalNode+j]];
+        max = map[0]; 
+        min = map[0];
+        for (int j = 1; j < theMesh->nLocalNode; j++) {
+            if (map[j] > max) max = map[j];
+            if (map[j] < min) min = map[j]; }
+        if (myBand < max-min) myBand = max-min; }
+    return(myBand++);
+
 }
 
 
@@ -72,7 +86,7 @@ double  *femBandSystemEliminate(femBandSystem *myBand)
     //à compléter
     for (k=0; k < size; k++) {
         jend = (k+band < size) ? k+band : size;
-        if ( fabs(A[k][k]) <= 1e-8 ) {
+        if ( fabs(A[k][k]) <= 1e-6 ) {
             printf("Pivot index %d  ",k);
             printf("Pivot value %e  ",A[k][k]);
             Error("Cannot eliminate with such a pivot"); }
