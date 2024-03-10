@@ -1,18 +1,14 @@
-
-
 #include"fem.h"
 
 
 #ifndef NORENUMBER 
 double *globalNode;
-
-int compare(const void *a, const void *b){    
+int compare(const void *a, const void *b){ 
     int *i = (int *)a;
     int *j = (int *)b;
     double diff = globalNode[*i] - globalNode[*j]; 
     return (diff < 0) - (diff > 0);
 }
-
 
 void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
 {
@@ -29,7 +25,7 @@ void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
 // A modifier :-)
 // debut
 //
-        case FEM_XNUM : 
+    case FEM_XNUM : 
             globalNode = theMesh->nodes->X;
             qsort(indice,theMesh->nodes->nNodes,sizeof(int),compare);
             break;
@@ -47,7 +43,6 @@ void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
     }
     free(indice);
 }
-
 #endif
 #ifndef NOBAND 
 
@@ -67,7 +62,7 @@ int femMeshComputeBand(femMesh *theMesh)
             }
         if (myBand < (max-min)) myBand = max-min; }
         
-    return(myBand+1);
+    return(myBand + 1); 
 }
 
 
@@ -108,8 +103,8 @@ double  *femBandSystemEliminate(femBandSystem *myBand)
             Error("Cannot eliminate with such a pivot"); }
         jend = (k+band < size) ? k+band : size;
         for (i = k+1 ; i <  jend; i++) {
-            factor = A[k][i] / A[k][k]; ///XXXX////XXXX
-            for (j = i ; j < jend; j++) ///XXXX////XXXX
+            factor = A[k][i] / A[k][k];
+            for (j = i ; j < jend; j++) 
                 A[i][j] = A[i][j] - A[k][j] * factor;
             B[i] = B[i] - B[k] * factor; }}
         
