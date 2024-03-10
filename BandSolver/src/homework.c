@@ -6,13 +6,11 @@
 #ifndef NORENUMBER 
 double *globalNode;
 
- int compare(const void *a, const void *b)
-{
-    int i = *(int *)a;
-    int j = *(int *)b;
-    if (globalNode[i] < globalNode[j]) return -1;
-    if (globalNode[i] > globalNode[j]) return 1;
-    return 0;
+int compare(const void *a, const void *b){    
+    int *i = (int *)a;
+    int *j = (int *)b;
+    double diff = globalNode[*i] - globalNode[*j]; 
+    return (diff < 0) - (diff > 0);
 }
 
 
@@ -68,8 +66,8 @@ int femMeshComputeBand(femMesh *theMesh)
             min = (map[j] < min) ? map[j] : min;
             }
         if (myBand < (max-min)) myBand = max-min; }
-        myBand = myBand+1;
-    return(myBand);
+        
+    return(myBand+1);
 }
 
 
@@ -104,20 +102,20 @@ double  *femBandSystemEliminate(femBandSystem *myBand)
     
     // A completer :-)
     for (k=0; k < size; k++) {
-        jend = (k+band < size) ? k+band : size;
         if ( fabs(A[k][k]) <= 1e-8 ) {
             printf("Pivot index %d  ",k);
             printf("Pivot value %e  ",A[k][k]);
             Error("Cannot eliminate with such a pivot"); }
+        jend = (k+band < size) ? k+band : size;
         for (i = k+1 ; i <  jend; i++) {
-            factor = A[i][k] / A[k][k];
-            for (j = k+1 ; j < jend; j++) 
+            factor = A[k][i] / A[k][k]; ///XXXX////XXXX
+            for (j = i ; j < jend; j++) ///XXXX////XXXX
                 A[i][j] = A[i][j] - A[k][j] * factor;
             B[i] = B[i] - B[k] * factor; }}
-    
+        
     /* Back-substitution */
 
-    for ( int  i = size-1; i >= 0 ; i--) {
+    for (i = size-1; i >= 0 ; i--) {
         factor = 0;
         jend = (i+band < size) ? i+band : size;
         for (j = i+1 ; j < jend; j++)
