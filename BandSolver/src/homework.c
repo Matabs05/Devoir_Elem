@@ -4,13 +4,24 @@
 
 
 #ifndef NORENUMBER 
+double *globalNode;
+
+ int compare(const void *a, const void *b)
+{
+    int i = *(int *)a;
+    int j = *(int *)b;
+    if (globalNode[i] < globalNode[j]) return -1;
+    if (globalNode[i] > globalNode[j]) return 1;
+    return 0;
+}
+
 
 void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
 {
     int i;
-    int * renum = malloc(sizeof(int)*theMesh->nodes->nNodes);
-    for (i = 0; i < theMesh->nodes->nNodes; i++) 
-        renum[i] = i;
+    int *indice = malloc(theMesh->nodes->nNodes*sizeof(int));
+    for (i = 0; i < theMesh->nodes->nNodes; i++) {
+        indice[i] = i; }
     switch (renumType) {
         case FEM_NO :
             for (i = 0; i < theMesh->nodes->nNodes; i++) 
@@ -21,15 +32,22 @@ void femMeshRenumber(femMesh *theMesh, femRenumType renumType)
 // debut
 //
         case FEM_XNUM : 
+            globalNode = theMesh->nodes->X;
+            qsort(indice,theMesh->nodes->nNodes,sizeof(int),compare);
+            break;
         case FEM_YNUM : 
-            for (i = 0; i < theMesh->nodes->nNodes; i++) 
-                theMesh->nodes->number[i] = i;
+            globalNode = theMesh->nodes->Y;
+            qsort(indice,theMesh->nodes->nNodes,sizeof(int),compare);
             break;            
 // 
 // end
 //
 
         default : Error("Unexpected renumbering option"); }
+    for(i = 0; i <theMesh->nodes->nNodes; i++){
+        theMesh->nodes->number[indice[i]] = i; 
+    }
+    free(indice);
 }
 
 #endif
@@ -41,16 +59,17 @@ int femMeshComputeBand(femMesh *theMesh)
     int max,min,map[theMesh->nLocalNode],iElem;
     
     for (int iElem = 0; iElem < theMesh->nElem; iElem++) {
-        for (int j = 0; j < theMesh->nLocalNode; j++) 
-            map[j] = theMesh->nodes->number[theMesh->elem[iElem*theMesh->nLocalNode+j]];
+        for (int j = 0; j < theMesh->nLocalNode; j++){
+            map[j] = theMesh->nodes->number[theMesh->elem[iElem*theMesh->nLocalNode+j]];}
         max = map[0]; 
         min = map[0];
         for (int j = 1; j < theMesh->nLocalNode; j++) {
-            if (map[j] > max) max = map[j];
-            if (map[j] < min) min = map[j]; }
-        if (myBand < max-min) myBand = max-min; }
-    return(myBand++);
-
+            max = (map[j] > max) ? map[j] : max;
+            min = (map[j] < min) ? map[j] : min;
+            }
+        if (myBand < (max-min)) myBand = max-min; }
+        myBand = myBand+1;
+    return(myBand);
 }
 
 
@@ -83,10 +102,10 @@ double  *femBandSystemEliminate(femBandSystem *myBand)
     size = myBand->size;
     band = myBand->band;
     
-    //à compléter
+    // A completer :-)
     for (k=0; k < size; k++) {
         jend = (k+band < size) ? k+band : size;
-        if ( fabs(A[k][k]) <= 1e-6 ) {
+        if ( fabs(A[k][k]) <= 1e-8 ) {
             printf("Pivot index %d  ",k);
             printf("Pivot value %e  ",A[k][k]);
             Error("Cannot eliminate with such a pivot"); }
@@ -98,16 +117,16 @@ double  *femBandSystemEliminate(femBandSystem *myBand)
     
     /* Back-substitution */
 
-    for (i = size-1; i >= 0 ; i--) {
+    for ( int  i = size-1; i >= 0 ; i--) {
         factor = 0;
         jend = (i+band < size) ? i+band : size;
         for (j = i+1 ; j < jend; j++)
             factor += A[i][j] * B[j];
         B[i] = ( B[i] - factor)/A[i][i]; }
 
+
     return(myBand->B);
 }
 
 
 #endif
-
