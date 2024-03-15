@@ -53,7 +53,7 @@ void geoMeshGenerate() {
     femGeo* theGeometry = geoGetGeometry();
 
     int ierr;
-     theGeometry->h = 0.4; 
+     theGeometry->h = 0.3; 
 
     // Ajout des points pour définir la géométrie
     double x = 0, y = 0, z = 0;
@@ -63,13 +63,13 @@ void geoMeshGenerate() {
     gmshModelOccAddPoint(x+8, y + 7, z, 1, 4, &ierr);
     gmshModelOccAddPoint(x, y + 1, z, 1, 5, &ierr);
 
-    gmshModelOccAddPoint(x + 1, y + 1, z, 1, 6, &ierr);
-    gmshModelOccAddPoint(x + 4, y + 3.2, z, 1, 7, &ierr);
-    gmshModelOccAddPoint(x + 4, y + 1, z, 1, 8, &ierr);
+    gmshModelOccAddPoint(x + 1.2, y + 1, z, 1, 6, &ierr);
+    gmshModelOccAddPoint(x + 5, y + 3.7, z, 1, 7, &ierr);
+    gmshModelOccAddPoint(x + 5, y + 1, z, 1, 8, &ierr);
 
-    gmshModelOccAddPoint(x + 5, y + 1, z, 1, 9, &ierr);
-    gmshModelOccAddPoint(x + 5, y + 3.9, z, 1, 10, &ierr);
-    gmshModelOccAddPoint(x + 8, y + 6, z, 1, 11, &ierr);
+    gmshModelOccAddPoint(x + 6, y + 1, z, 1, 9, &ierr);
+    gmshModelOccAddPoint(x + 6, y + 4.3, z, 1, 10, &ierr);
+    gmshModelOccAddPoint(x + 8, y + 5.8, z, 1, 11, &ierr);
     gmshModelOccAddPoint(x + 8, y + 1, z, 1, 12, &ierr);
     // Ajouter d'autres points selon votre géométrie
 
