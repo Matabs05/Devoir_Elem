@@ -30,8 +30,8 @@ double geoSize(double x, double y){
     double dist_hole = sqrt((x-x1)*(x-x1)+(y-y1)*(y-y1)) - r1;
     double dist_notch = sqrt((x-x0)*(x-x0)+(y-y0)*(y-y0)) - r0;
     double d1_star = d1;
-
-    if(dist_notch < d0_star && dist_hole < d1_star){
+    return h;
+    /*if(dist_notch < d0_star && dist_hole < d1_star){
         return fmin(Hermite(x0,h0,h,dist_notch,d0_star),Hermite(x1,h1,h,dist_hole,d1_star));
     }
     else if (dist_notch < d0_star && dist_hole > d1_star) {
@@ -42,7 +42,7 @@ double geoSize(double x, double y){
         return Hermite(x1,h1,h,dist_hole,d1_star);
     }else {
         return h;
-    }
+    }*/
 }
 
 
@@ -52,119 +52,78 @@ void geoMeshGenerate() {
 
     femGeo* theGeometry = geoGetGeometry();
 
-    double w = theGeometry->LxPlate;
-    double h = theGeometry->LyPlate;
-     
-    
- 
-//
-//  -1- Construction de la g�om�trie avec OpenCascade
-//      On cr�e le rectangle
-//      On cr�e les deux cercles
-//      On soustrait les cercles du rectangle :-)
-//
     int ierr;
-    /*
-    
-    int idPlate = gmshModelOccAddRectangle(-0.5*w, -0.5*h, 0, w, h, -1, 0,&ierr);   
-    ErrorGmsh(ierr);
-    int idNotch = gmshModelOccAddDisk(x0, y0, 0, r0, r0, -1,NULL,0,NULL,0,&ierr); 
-    ErrorGmsh(ierr);
-    int idHole  = gmshModelOccAddDisk(x1, y1, 0, r1, r1, -1,NULL,0,NULL,0,&ierr);    
-    ErrorGmsh(ierr);
+     theGeometry->h = 0.4; 
 
-    int plate[] = {2,idPlate};
-    int notch[] = {2,idNotch};
-    int hole[] = {2,idHole};
-    gmshModelOccCut(plate, 2, notch, 2, NULL, NULL, NULL, NULL, NULL, -1, 1, 1, &ierr); 
-    ErrorGmsh(ierr);
-    gmshModelOccCut(plate, 2, hole, 2, NULL, NULL, NULL, NULL, NULL, -1, 1, 1, &ierr); 
-    ErrorGmsh(ierr);*/
-    double x,y,z;
-    x=0;y=0;z=0;
-    gmshModelOccAddPoint(x, y, 0, 0.1, 1, &ierr);
-    gmshModelOccAddPoint(x+9, y, 0,0.1, 2, &ierr);
-    gmshModelOccAddPoint(x+9, y+7, 0, 0.1,3, &ierr);
-    gmshModelOccAddPoint(x+8, y+7, 0, 0.1, 4, &ierr);
-    gmshModelOccAddPoint(x, y+1, 0, 0.1, 5,&ierr);
-    gmshModelOccAddPoint(x+1, y+1, 0, 0.1,6, &ierr);
-    gmshModelOccAddPoint(x+4, y+3, 0, 0.1, 7, &ierr);
-    gmshModelOccAddPoint(x+5, y+4, 0, 0.1, 8, &ierr);
-    gmshModelOccAddPoint(x+8, y+6, 0, 0.1, 9, &ierr);
-    gmshModelOccAddPoint(x+8, y+1, 0, 0.1, 10, &ierr);
-    gmshModelOccAddPoint(x+5, y+1, 0, 0.1, 11, &ierr);
-    gmshModelOccAddPoint(x+4, y+1, 0, 0.1, 12, &ierr);
+    // Ajout des points pour définir la géométrie
+    double x = 0, y = 0, z = 0;
+    gmshModelOccAddPoint(x, y, z, 1, 1, &ierr); // Augmenter le rayon pour réduire le nombre de points
+    gmshModelOccAddPoint(x + 9, y, z, 1, 2, &ierr);
+    gmshModelOccAddPoint(x + 9, y + 7, z, 1, 3, &ierr);
+    gmshModelOccAddPoint(x+8, y + 7, z, 1, 4, &ierr);
+    gmshModelOccAddPoint(x, y + 1, z, 1, 5, &ierr);
 
+    gmshModelOccAddPoint(x + 1, y + 1, z, 1, 6, &ierr);
+    gmshModelOccAddPoint(x + 4, y + 3.2, z, 1, 7, &ierr);
+    gmshModelOccAddPoint(x + 4, y + 1, z, 1, 8, &ierr);
+
+    gmshModelOccAddPoint(x + 5, y + 1, z, 1, 9, &ierr);
+    gmshModelOccAddPoint(x + 5, y + 3.9, z, 1, 10, &ierr);
+    gmshModelOccAddPoint(x + 8, y + 6, z, 1, 11, &ierr);
+    gmshModelOccAddPoint(x + 8, y + 1, z, 1, 12, &ierr);
+    // Ajouter d'autres points selon votre géométrie
+
+    // Ajout des lignes pour former les bords de la surface
     gmshModelOccAddLine(1, 2, 1, &ierr);
     gmshModelOccAddLine(2, 3, 2, &ierr);
-    gmshModelOccAddLine(3, 4, 3, &ierr); 
+    gmshModelOccAddLine(3, 4, 3, &ierr);
     gmshModelOccAddLine(4, 5, 4, &ierr);
     gmshModelOccAddLine(5, 1, 5, &ierr);
     gmshModelOccAddLine(6, 7, 6, &ierr);
     gmshModelOccAddLine(7, 8, 7, &ierr);
-    gmshModelOccAddLine(8, 9, 8, &ierr);
+    gmshModelOccAddLine(8, 6, 8, &ierr);
     gmshModelOccAddLine(9, 10, 9, &ierr);
     gmshModelOccAddLine(10, 11, 10, &ierr);
-    gmshModelOccAddLine(11, 8, 11, &ierr);
-    gmshModelOccAddLine(12, 6, 12, &ierr);
-    gmshModelOccAddLine(12, 7, 13, &ierr);
+    gmshModelOccAddLine(11, 12, 11, &ierr);
+    gmshModelOccAddLine(12, 9, 12, &ierr);
+    // Ajouter d'autres lignes selon votre géométrie
+
+    // Construction de la boucle de la surface
+    int curveTags[] = {1,2,3,4,5}; // Utilisation de deux lignes pour former une boucle
+    gmshModelOccAddCurveLoop(curveTags, 5, 1, &ierr);
+
+    // Création de la surface
+    int wireTags[] = {1}; // Utilisation de la boucle comme fil
+    int outersurface = gmshModelOccAddPlaneSurface(wireTags, 1, 1, &ierr); 
+
+    int innerCurveTags[] = {6, 7, 8}; // Les tags des points intérieurs
+    gmshModelOccAddCurveLoop(innerCurveTags, 3, 2, &ierr);
+
+    // Créer une nouvelle surface à l'intérieur
+    int innerWireTags[] = {2}; // Utilisation de la nouvelle boucle comme fil
+    int innersurface = gmshModelOccAddPlaneSurface(innerWireTags, 1, 2, &ierr);
+
+    int innerCurveTags2[] = {9, 10, 11, 12}; // Les tags des points intérieurs
+    gmshModelOccAddCurveLoop(innerCurveTags2, 4, 3, &ierr);
+
+    int innerWireTags2[] = {3}; // Utilisation de la nouvelle boucle comme fil
+    int innersurface2 = gmshModelOccAddPlaneSurface(innerWireTags2, 1, 3, &ierr);
+
+    // Couper la surface extérieure par la surface intérieure
+    int outer[] = {2,outersurface};
+    int inner[] = {2,innersurface};
+    gmshModelOccCut(outer,2,inner,2,NULL,NULL,NULL,NULL,NULL,-1,1,1,&ierr);
+
+    int inner2[] = {2,innersurface2};
+    gmshModelOccCut(outer,2,inner2,2,NULL,NULL,NULL,NULL,NULL,-1,1,1,&ierr);
     
-    int curveTag[5] = {1,5,4,3,2};
-    int curveTag1[4] = {7,8,9,10};
-    int curveTag2[3] = {6,12,11};
-    gmshModelOccAddWire(curveTag,5,1,1, &ierr); // Boucle extérieure
-    gmshModelOccAddWire(curveTag1,4,1,2, &ierr); // Boucle intérieure
-    gmshModelOccAddWire(curveTag2,3,1,3, &ierr); // Boucle pour le trou
 
-        // Supprimer les segments des rectangles
-    
-    gmshModelOccAddCurveLoop(curveTag, 5, 1, &ierr);
-    gmshModelOccAddCurveLoop(curveTag1, 4, 2, &ierr);
-    gmshModelOccAddCurveLoop(curveTag2, 3, 3, &ierr);
-    
-    int wireTags[1] = {1};
-
-    gmshModelOccAddPlaneSurface(wireTags, 1,20, &ierr); // Surface entre la boucle intérieure et la boucle pour le trou
-
-
-
-    // Définition des points pour les coins des rectangles
-    
-    // Coordonnées du trapèze à supprimer
-   
-
-
-
-    
-
-
-//  -2- D�finition de la fonction callback pour la taille de r�f�rence
-//      Synchronisation de OpenCascade avec gmsh
-//      G�n�ration du maillage (avec l'option Mesh.SaveAll :-)
-                  
-   
+    // Définition de la taille de maillage
     geoSetSizeCallback(geoSize);
-                                  
-    gmshModelOccSynchronize(&ierr);       
+    gmshModelOccSynchronize(&ierr);
     gmshOptionSetNumber("Mesh.SaveAll", 1, &ierr);
-    gmshModelMeshGenerate(2, &ierr);  
-       
-//
-//  Generation de quads :-)
-//
-    //    gmshOptionSetNumber("Mesh.SaveAll", 1, &ierr);
-    //    gmshOptionSetNumber("Mesh.RecombineAll", 1, &ierr);
-    //    gmshOptionSetNumber("Mesh.Algorithm", 8, &ierr);  chk(ierr);  
-    //    gmshOptionSetNumber("Mesh.RecombinationAlgorithm", 1.0, &ierr);  chk(ierr); 
-    //    gmshModelGeoMeshSetRecombine(2,1,45,&ierr);  chk(ierr);  
-    //    gmshModelMeshGenerate(2, &ierr);  
-   
- 
-//
-//  Plot of Fltk
-//
-//   gmshFltkInitialize(&ierr);
-//   gmshFltkRun(&ierr);  chk(ierr); 
-//
+
+    // Génération du maillage
+    gmshModelMeshGenerate(2, &ierr);
     
 }

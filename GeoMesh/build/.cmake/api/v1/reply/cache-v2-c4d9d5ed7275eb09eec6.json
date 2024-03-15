@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/addr2line.exe"
+			"value" : "C:/TDM-GCC-64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/ar.exe"
+			"value" : "C:/TDM-GCC-64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity/build"
+			"value" : "c:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -167,11 +167,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "C:/msys64/mingw64/bin/g++.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/TDM-GCC-64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/gcc-ar.exe"
+			"value" : "C:/TDM-GCC-64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -203,7 +203,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/gcc-ranlib.exe"
+			"value" : "C:/TDM-GCC-64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -311,11 +311,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "C:/msys64/mingw64/bin/gcc.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/TDM-GCC-64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -331,7 +331,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/gcc-ar.exe"
+			"value" : "C:/TDM-GCC-64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -347,7 +347,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/gcc-ranlib.exe"
+			"value" : "C:/TDM-GCC-64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -459,7 +459,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/dlltool.exe"
+			"value" : "C:/TDM-GCC-64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -599,7 +599,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -683,7 +683,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity"
+			"value" : "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -711,7 +711,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/ld.exe"
+			"value" : "C:/TDM-GCC-64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -727,7 +727,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/mingw32-make.exe"
+			"value" : "C:/TDM-GCC-64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -823,7 +823,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/nm.exe"
+			"value" : "C:/TDM-GCC-64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/objcopy.exe"
+			"value" : "C:/TDM-GCC-64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -867,7 +867,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/objdump.exe"
+			"value" : "C:/TDM-GCC-64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -931,7 +931,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/ranlib.exe"
+			"value" : "C:/TDM-GCC-64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -947,7 +947,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/windres.exe"
+			"value" : "C:/TDM-GCC-64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1055,7 +1055,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/readelf.exe"
+			"value" : "C:/TDM-GCC-64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1275,7 +1275,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/mingw64/bin/strip.exe"
+			"value" : "C:/TDM-GCC-64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity/build/glfw"
+			"value" : "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity/glfw"
+			"value" : "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/glfw"
 		},
 		{
 			"name" : "GLFW_USE_HYBRID_HPG",
@@ -1615,7 +1615,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity/build"
+			"value" : "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh/build"
 		},
 		{
 			"name" : "myFemProject_IS_TOP_LEVEL",
@@ -1639,7 +1639,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/LinearElasticity"
+			"value" : "C:/Users/ljacq/Documents/Devoir_Elem/GeoMesh"
 		}
 	],
 	"kind" : "cache",

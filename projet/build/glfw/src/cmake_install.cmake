@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/Projet/glfw/src
+# Install script for directory: C:/Users/ljacq/Documents/Devoir_Elem/projet/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/TDM-GCC-64/bin/objdump.exe")
 endif()
 

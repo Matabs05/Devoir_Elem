@@ -48,13 +48,7 @@ int main(void)
    
     geoMeshGenerate();
     geoMeshImport();
-    
-    geoSetDomainName(0,"Outer Disk");
-    geoSetDomainName(1,"Bottom");
-    geoSetDomainName(2,"Left");
-    geoSetDomainName(3,"Right");
-    geoSetDomainName(4,"Top");
-    geoSetDomainName(5,"Inner Disk");
+
     
 
 //
@@ -83,7 +77,7 @@ int main(void)
 //  
     
     int mode = 1; // Change mode by pressing "j", "k", "l"
-    int domain = 30;
+    int domain = 0;
     int freezingButton = FALSE;
     double t, told = 0;
     char theMessage[256];
