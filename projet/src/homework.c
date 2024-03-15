@@ -116,6 +116,14 @@ void geoMeshGenerate() {
     gmshModelOccAddLine(12, 6, 12, &ierr);
     gmshModelOccAddLine(12, 7, 13, &ierr);
     
+    int curveTag[5] = {1,5,4,3,2}
+    gmshModelOccAddCurveLoop({1, 2, 3, 4, 5}, 1, &ierr); // Boucle extérieure
+    gmshModelOccAddCurveLoop({6, 7, 8, 9, 10, 11}, 2, &ierr); // Boucle intérieure
+    gmshModelOccAddCurveLoop({12, 13}, 3, &ierr); // Boucle pour le trou
+
+
+    gmshModelOccAddPlaneSurface({1}, 1, &ierr); // Surface entre la boucle extérieure et le trou
+    gmshModelOccAddPlaneSurface({2}, 2, &ierr); 
     
 
 
