@@ -55,14 +55,7 @@ void geoMeshGenerate() {
     double w = theGeometry->LxPlate;
     double h = theGeometry->LyPlate;
      
-    double x0 = theGeometry->xNotch;
-    double y0 = theGeometry->yNotch;
-    double r0 = theGeometry->rNotch;
     
-    
-    double x1 = theGeometry->xHole;
-    double y1 = theGeometry->yHole;
-    double r1 = theGeometry->rHole;
  
 //
 //  -1- Construction de la g�om�trie avec OpenCascade
@@ -90,7 +83,7 @@ void geoMeshGenerate() {
     double x,y,z;
     x=0;y=0;z=0;
     gmshModelOccAddPoint(x, y, 0, 0.1, 1, &ierr);
-    gmshModelOccAddPoint(x+10, y, 0,0.1, 2, &ierr);
+    gmshModelOccAddPoint(x+9, y, 0,0.1, 2, &ierr);
     gmshModelOccAddPoint(x+9, y+7, 0, 0.1,3, &ierr);
     gmshModelOccAddPoint(x+8, y+7, 0, 0.1, 4, &ierr);
     gmshModelOccAddPoint(x, y+1, 0, 0.1, 5,&ierr);
@@ -116,14 +109,32 @@ void geoMeshGenerate() {
     gmshModelOccAddLine(12, 6, 12, &ierr);
     gmshModelOccAddLine(12, 7, 13, &ierr);
     
-    int curveTag[5] = {1,5,4,3,2}
-    gmshModelOccAddCurveLoop({1, 2, 3, 4, 5}, 1, &ierr); // Boucle extérieure
-    gmshModelOccAddCurveLoop({6, 7, 8, 9, 10, 11}, 2, &ierr); // Boucle intérieure
-    gmshModelOccAddCurveLoop({12, 13}, 3, &ierr); // Boucle pour le trou
+    int curveTag[5] = {1,5,4,3,2};
+    int curveTag1[4] = {7,8,9,10};
+    int curveTag2[3] = {6,12,11};
+    gmshModelOccAddWire(curveTag,5,1,1, &ierr); // Boucle extérieure
+    gmshModelOccAddWire(curveTag1,4,1,2, &ierr); // Boucle intérieure
+    gmshModelOccAddWire(curveTag2,3,1,3, &ierr); // Boucle pour le trou
+
+        // Supprimer les segments des rectangles
+    
+    gmshModelOccAddCurveLoop(curveTag, 5, 1, &ierr);
+    gmshModelOccAddCurveLoop(curveTag1, 4, 2, &ierr);
+    gmshModelOccAddCurveLoop(curveTag2, 3, 3, &ierr);
+    
+    int wireTags[1] = {1};
+
+    gmshModelOccAddPlaneSurface(wireTags, 1,20, &ierr); // Surface entre la boucle intérieure et la boucle pour le trou
 
 
-    gmshModelOccAddPlaneSurface({1}, 1, &ierr); // Surface entre la boucle extérieure et le trou
-    gmshModelOccAddPlaneSurface({2}, 2, &ierr); 
+
+    // Définition des points pour les coins des rectangles
+    
+    // Coordonnées du trapèze à supprimer
+   
+
+
+
     
 
 

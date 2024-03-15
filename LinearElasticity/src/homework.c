@@ -63,7 +63,15 @@ double *femElasticitySolve(femProblem *theProblem)
     double g   = theProblem->g;
     double **A = theSystem->A;
     double *B  = theSystem->B;
-    for (iElem = 0; iElem < theMesh->nElem; iElem++) {  
+    
+    for (iElem = 0; iElem < theMesh->nElem; iElem++) {
+        for (i = 0; i < nLocal; i++) {
+            map[j] = theMesh->elem[iElem*nLocal+i];
+            mapX[j] = 2*map[j];
+            mapY[j] = 2*map[j];
+            x[j] = theNodes->X[map[j]];
+            y[j] = theNodes->Y[map[j]];
+            }  
         for (iInteg=0; iInteg < theRule->n; iInteg++) {    
             double xsi    = theRule->xsi[iInteg];
             double eta    = theRule->eta[iInteg];
@@ -79,15 +87,18 @@ double *femElasticitySolve(femProblem *theProblem)
                 dxdeta += x[i]*dphideta[i];   
                 dydxsi += y[i]*dphidxsi[i];   
                 dydeta += y[i]*dphideta[i]; }
-            double jac = dxdxsi * dydeta - dxdeta * dydxsi;
+            double jac = fabs(dxdxsi * dydeta - dxdeta * dydxsi);
             for (i = 0; i < theSpace->n; i++) {    
                 dphidx[i] = (dphidxsi[i] * dydeta - dphideta[i] * dydxsi) / jac;       
                 dphidy[i] = (dphideta[i] * dxdxsi - dphidxsi[i] * dxdeta) / jac; }            
             for (i = 0; i < theSpace->n; i++) { 
-                theSystem->B[map[i]] += phi[i] * jac *weight;
                 for(j = 0; j < theSpace->n; j++) {
-                    theSystem->A[map[i]][map[j]] += (dphidx[i] * dphidx[j] 
-                                                   + dphidy[i] * dphidy[j]) * jac * weight; }}                                                                                            
+                    A[mapX[i]][mapX[j]] += (a * (dphidx[i] * dphidx[j]) + c*(dphidy[i] * dphidy[j]) )* jac * weight;
+                    A[mapY[i]][mapY[j]] += (a * (dphidx[i] * dphidx[j]) + c*(dphidy[i] * dphidy[j]) )* jac * weight;
+                    A[mapX[i]][mapY[j]] += (b * (dphidx[i] * dphidy[j]) + c*(dphidy[i] * dphidx[j]) )* jac * weight;
+                    A[mapY[i]][mapX[j]] += (b * (dphidx[i] * dphidy[j]) + c*(dphidy[i] * dphidx[j]) )* jac * weight; 
+                }
+                B[mapY[i]] -= rho * g * phi[i] * jac * weight;}                                                                             
             
     }}
     
