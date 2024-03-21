@@ -79,11 +79,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/ljacq/Documents/Devoir_Elem/projet/glfw/include"
+					"path" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/projet/glfw/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/ljacq/Documents/Devoir_Elem/projet/gmsh/gmsh-4.12.2-Windows64-sdk/include"
+					"path" : "C:/Users/matthieu/OneDrive - UCL/BAC3/Elements finis/Devoir_Elem/projet/gmsh/gmsh-4.12.2-Windows64-sdk/include"
 				}
 			],
 			"language" : "C",
@@ -128,7 +128,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\ljacq\\Documents\\Devoir_Elem\\projet\\gmsh\\gmsh-4.12.2-Windows64-sdk\\lib\\gmsh.lib",
+				"fragment" : "\"C:\\Users\\matthieu\\OneDrive - UCL\\BAC3\\Elements finis\\Devoir_Elem\\projet\\gmsh\\gmsh-4.12.2-Windows64-sdk\\lib\\gmsh.lib\"",
 				"role" : "libraries"
 			},
 			{
