@@ -58,47 +58,47 @@ void geoMeshGenerate() {
     // Ajout des points pour définir la géométrie
     double x = 0, y = 0, z = 0;
     gmshModelOccAddPoint(x, y, z, 1, 1, &ierr); // Augmenter le rayon pour réduire le nombre de points
-    gmshModelOccAddPoint(x, y+1, z, 1, 2, &ierr);
-    gmshModelOccAddPoint(x+0.58333, y + 5.5, z, 1, 3, &ierr);
-    gmshModelOccAddPoint(x+7.5, y + 11 , z, 1, 4, &ierr);
-    gmshModelOccAddPoint(x+14.41667, y + 5.5, z, 1, 5, &ierr);
-    gmshModelOccAddPoint(x+15, y + 1, z, 1, 6, &ierr);
+    gmshModelOccAddPoint(x, y+4, z, 1, 2, &ierr);
+    gmshModelOccAddPoint(x+0.58333, y + 8.5, z, 1, 3, &ierr);
+    gmshModelOccAddPoint(x+7.5, y + 14 , z, 1, 4, &ierr);
+    gmshModelOccAddPoint(x+14.41667, y + 8.5, z, 1, 5, &ierr);
+    gmshModelOccAddPoint(x+15, y + 4, z, 1, 6, &ierr);
     gmshModelOccAddPoint(x+15, y, z, 1, 7, &ierr);
 
     gmshModelOccAddPoint(x+0.5, y, z, 1, 8, &ierr);
-    gmshModelOccAddPoint(x+0.5, y+1, z, 1, 9, &ierr);
-    gmshModelOccAddPoint(x+0.6622, y + 2.298, z, 1, 10, &ierr);
-    gmshModelOccAddPoint(x+4.378, y + 5, z, 1, 11, &ierr);
-    gmshModelOccAddPoint(x+10.622, y + 5, z, 1, 12, &ierr);
-    gmshModelOccAddPoint(x+14.378, y + 2.298, z, 1, 13, &ierr);
-    gmshModelOccAddPoint(x+14.5, y+1 , z, 1, 14, &ierr);
+    gmshModelOccAddPoint(x+0.5, y+4, z, 1, 9, &ierr);
+    gmshModelOccAddPoint(x+0.6622, y + 5.298, z, 1, 10, &ierr);
+    gmshModelOccAddPoint(x+4.378, y + 8, z, 1, 11, &ierr);
+    gmshModelOccAddPoint(x+10.622, y + 8, z, 1, 12, &ierr);
+    gmshModelOccAddPoint(x+14.378, y + 5.298, z, 1, 13, &ierr);
+    gmshModelOccAddPoint(x+14.5, y+4 , z, 1, 14, &ierr);
     gmshModelOccAddPoint(x+14.5, y, z, 1, 15, &ierr);
 
-    gmshModelOccAddPoint(x+0.7499, y + 3, z, 1, 16, &ierr);
-    gmshModelOccAddPoint(x+3.5, y + 5, z, 1, 17, &ierr);
-    gmshModelOccAddPoint(x+1, y + 5, z, 1, 18, &ierr);
+    gmshModelOccAddPoint(x+0.7499, y + 6, z, 1, 16, &ierr);
+    gmshModelOccAddPoint(x+3.5, y + 8, z, 1, 17, &ierr);
+    gmshModelOccAddPoint(x+1, y + 8, z, 1, 18, &ierr);
 
-    gmshModelOccAddPoint(x+14.25, y+3 , z, 1, 19, &ierr);
-    gmshModelOccAddPoint(x+11.5, y+5, z, 1, 20, &ierr);
-    gmshModelOccAddPoint(x+14, y+5, z, 1, 21, &ierr);
+    gmshModelOccAddPoint(x+14.25, y+6 , z, 1, 19, &ierr);
+    gmshModelOccAddPoint(x+11.5, y+8, z, 1, 20, &ierr);
+    gmshModelOccAddPoint(x+14, y+8, z, 1, 21, &ierr);
 
-    gmshModelOccAddPoint(x + 1.4, y + 5.5, z, 1, 22, &ierr);
-    gmshModelOccAddPoint(x + 7, y + 5.5, z, 1, 23, &ierr);
-    gmshModelOccAddPoint(x + 4.24, y + 7.7, z, 1, 24, &ierr);
+    gmshModelOccAddPoint(x + 1.4, y + 8.5, z, 1, 22, &ierr);
+    gmshModelOccAddPoint(x + 7, y + 8.5, z, 1, 23, &ierr);
+    gmshModelOccAddPoint(x + 4.24, y + 10.7, z, 1, 24, &ierr);
 
-    gmshModelOccAddPoint(x + 13.6, y + 5.5, z, 1, 25, &ierr);
-    gmshModelOccAddPoint(x + 8, y + 5.5, z, 1, 26, &ierr);
-    gmshModelOccAddPoint(x + 10.76, y + 7.7, z, 1, 27, &ierr);
+    gmshModelOccAddPoint(x + 13.6, y + 8.5, z, 1, 25, &ierr);
+    gmshModelOccAddPoint(x + 8, y + 8.5, z, 1, 26, &ierr);
+    gmshModelOccAddPoint(x + 10.76, y + 10.7, z, 1, 27, &ierr);
 
-    gmshModelOccAddPoint(x + 7.5, y + 10.31, z, 1, 28, &ierr);
-    gmshModelOccAddPoint(x + 5.85, y + 9, z, 1, 29, &ierr);
-    gmshModelOccAddPoint(x + 9.15, y + 9, z, 1, 30, &ierr);
+    gmshModelOccAddPoint(x + 7.5, y + 13.31, z, 1, 28, &ierr);
+    gmshModelOccAddPoint(x + 5.85, y + 12, z, 1, 29, &ierr);
+    gmshModelOccAddPoint(x + 9.15, y + 12, z, 1, 30, &ierr);
 
-    gmshModelOccAddPoint(x + 5.15, y + 8.45, z, 1, 31, &ierr);
-    gmshModelOccAddPoint(x + 4.65, y + 8.05, z, 1, 32, &ierr);
-    gmshModelOccAddPoint(x + 7.5, y + 5.7, z, 1, 33, &ierr);
-    gmshModelOccAddPoint(x + 10.35, y + 8.05, z, 1, 34, &ierr);
-    gmshModelOccAddPoint(x + 9.85, y + 8.45, z, 1, 35, &ierr);
+    gmshModelOccAddPoint(x + 5.15, y + 11.45, z, 1, 31, &ierr);
+    gmshModelOccAddPoint(x + 4.65, y + 11.05, z, 1, 32, &ierr);
+    gmshModelOccAddPoint(x + 7.5, y + 8.7, z, 1, 33, &ierr);
+    gmshModelOccAddPoint(x + 10.35, y + 11.05, z, 1, 34, &ierr);
+    gmshModelOccAddPoint(x + 9.85, y + 11.45, z, 1, 35, &ierr);
     
 
     
